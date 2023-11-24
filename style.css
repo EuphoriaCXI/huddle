@@ -188,6 +188,52 @@ header img {
   margin-top: 3.5rem;
 }
 
+/* Benefit - 375px */
+.benefit__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 3.5rem 1.25rem 0;
+}
+
+.benefit__card {
+  border-radius: 1rem;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
+  text-align: center;
+}
+
+/* Card 1 */
+
+.benefit__card:nth-of-type(1) .card__image {
+  padding: 3.5rem 3.063rem 3.375rem;
+}
+
+.benefit__card:nth-of-type(1) .card__content p {
+  padding: 1rem 2.313rem 2.063rem;
+}
+
+/* Card 2 */
+
+.benefit__card:nth-of-type(2) .card__image {
+  padding: 4.1rem 2.838rem;
+}
+
+.benefit__card:nth-of-type(2) .card__content p {
+  padding: 1rem 2.438rem 3.375rem;
+}
+
+/* Card 3 */
+
+.benefit__card:nth-of-type(3) .card__image {
+  padding: 3.729rem 2.809rem;
+}
+
+.benefit__card:nth-of-type(3) .card__content p {
+  padding: 1rem 2.688rem 2.063rem;
+}
+
+/* CTA - 375px */
+
 /* Footer - 375px */
 .footer__container {
   background-color: var(--neutral-very-dark-cyan);
