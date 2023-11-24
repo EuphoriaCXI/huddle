@@ -57,7 +57,9 @@ a {
 }
 
 /* Styling */
+/* ------- */
 body {
+  max-width: 1440px;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
 }
@@ -66,6 +68,124 @@ h1,
 h2,
 h3 {
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.header__button a {
+  background-color: #fff;
+  color: var(--neutral-very-dark-cyan);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  padding: 0.25rem 1.375rem 0.375rem;
+  border-radius: 0.75rem;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hero__wrapper {
+  color: var(--neutral-very-dark-cyan);
+}
+
+.hero__content h1 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.hero__content p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.hero__button a {
+  background-color: var(--primary-pink);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0.625rem 3.75rem 0.875rem;
+  border-radius: 1.25rem;
+  box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.17);
+}
+
+.card__content h2 {
+  color: var(--neutral-very-dark-cyan);
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.card__content p {
+  color: var(--neutral-grayish-blue);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.cta__content h2 {
+  color: var(--neutral-very-dark-cyan);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.cta__content a {
+  border: 2px solid red;
+  font-size: 0.625rem;
+  line-height: 1.5;
+}
+
+.footer__wrapper {
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.71;
+}
+
+.footer__links ul li a {
+  color: #fff;
+}
+
+.copyright__wrapper p {
+  font-size: 0.696rem;
+  line-height: normal;
+}
+
+/* Mobile - 375 px */
+/* --------------- */
+
+/* Header - 375px */
+.header-hero__container {
+  background-image: url(/images/bg-hero-mobile.svg);
+  background-color: var(--neutral-very-pale-cyan);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.688rem 1rem 0;
+}
+
+header img {
+  width: 6.5rem;
+}
+
+.header__image,
+.header__button {
+  align-self: center;
+}
+
+/* Hero - 375px */
+.hero__wrapper {
+  padding: 5rem 2.188rem 2.313rem;
+  text-align: center;
+}
+
+.hero__content p {
+  margin-top: 1.5rem;
+}
+
+.hero__button {
+  margin-top: 2rem;
+}
+
+.hero__image {
+  margin-top: 3.5rem;
 }
 
 /* Footer - 375px */
