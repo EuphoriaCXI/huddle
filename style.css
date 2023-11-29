@@ -156,6 +156,7 @@ h3 {
 .header-hero__container {
   background-image: url(/images/bg-hero-mobile.svg);
   background-color: var(--neutral-very-pale-cyan);
+  background-repeat: no-repeat;
 }
 
 header {
@@ -273,7 +274,7 @@ header img {
 
 .contact__wrapper {
   display: flex;
-  gap: 1.6rem;
+  gap: 1.4rem;
 }
 
 .contact__wrapper:nth-of-type(1) {
@@ -329,4 +330,58 @@ header img {
 .copyright__wrapper {
   text-align: center;
   padding-top: 1.5rem;
+}
+
+@media screen and (min-width: 48rem) {
+  /* Styling */
+  /* ------- */
+  .header__button a {
+    font-size: 0.875rem;
+    line-height: normal;
+    padding: 0.813rem 4.063rem 1rem 3.938rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero__content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero__content p {
+    font-size: 1.125rem;
+  }
+
+  .hero__button {
+    margin-top: 2.3rem;
+  }
+
+  .hero__button a {
+    font-size: 0.875rem;
+  }
+
+  /* Header - 1440px (MAX) */
+  header {
+    padding: 3.125rem 5rem 0;
+  }
+
+  header img {
+    width: 12.5rem;
+  }
+
+  /* Hero - 1440ppx (MAX) */
+  .hero__wrapper {
+    display: grid;
+    grid-template-columns: 33.5rem 40.188rem;
+    justify-content: space-between;
+    padding: 4.438rem 5.625rem 4.5rem 5rem;
+    text-align: start;
+  }
+
+  .hero__image {
+    margin-top: 0;
+  }
+
+  .hero__content {
+    padding-top: 5.4rem;
+  }
 }
