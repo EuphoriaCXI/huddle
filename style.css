@@ -59,7 +59,6 @@ a {
 /* Styling */
 /* ------- */
 body {
-  max-width: 1440px;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
 }
@@ -126,9 +125,13 @@ h3 {
 }
 
 .cta__content a {
-  border: 2px solid red;
+  background-color: var(--primary-pink);
+  color: #fff;
   font-size: 0.625rem;
   line-height: 1.5;
+  padding: 0.781rem 3.125rem;
+  border-radius: 1.25rem;
+  box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.17);
 }
 
 .footer__wrapper {
@@ -203,7 +206,6 @@ header img {
 }
 
 /* Card 1 */
-
 .benefit__card:nth-of-type(1) .card__image {
   padding: 3.5rem 3.063rem 3.375rem;
 }
@@ -213,7 +215,6 @@ header img {
 }
 
 /* Card 2 */
-
 .benefit__card:nth-of-type(2) .card__image {
   padding: 4.1rem 2.838rem;
 }
@@ -223,7 +224,6 @@ header img {
 }
 
 /* Card 3 */
-
 .benefit__card:nth-of-type(3) .card__image {
   padding: 3.729rem 2.809rem;
 }
@@ -233,8 +233,100 @@ header img {
 }
 
 /* CTA - 375px */
+.cta__wrapper {
+  background-color: #fff;
+  border-radius: 0.938rem;
+  box-shadow: 0px 0px 0.875rem 0px rgba(0, 0, 0, 0.07);
+  margin: 7.5rem 0.75rem 0;
+}
+
+.cta__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.563rem 0.75rem;
+}
 
 /* Footer - 375px */
 .footer__container {
   background-color: var(--neutral-very-dark-cyan);
+  position: relative;
+  z-index: -1;
+  margin-top: -4rem;
+}
+
+.footer__wrapper {
+  padding: 9rem 1rem 2.875rem;
+}
+
+.footer__img {
+  width: 10.438rem;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.563rem;
+}
+
+.contact__wrapper {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.contact__wrapper:nth-of-type(1) {
+  padding-top: 1.563rem;
+}
+
+.contact__wrapper:nth-of-type(3) p {
+  margin-top: -0.125rem;
+}
+
+.contact__wrapper:nth-of-type(2),
+.contact__wrapper:nth-of-type(3) {
+  gap: 0;
+}
+
+.contact__image {
+  width: 2.25rem;
+}
+
+.footer__links {
+  padding-top: 2.563rem;
+}
+
+.footer__links ul {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.footer__links ul li {
+  align-self: flex-start;
+}
+
+.social__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.709rem;
+  padding-top: 1.5rem;
+  color: #fff;
+}
+
+.social__links ul {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 0.625rem;
+}
+
+.social__links svg path {
+  fill: #fff;
+}
+
+.copyright__wrapper {
+  text-align: center;
+  padding-top: 1.5rem;
 }
